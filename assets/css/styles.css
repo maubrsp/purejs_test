@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 0;
+}
+html,
+body,
+#app {
+  height: 100%;
+}
+body,
+input,
+button,
+a {
+  font: 14px 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(-45deg, #aaa 25%, #eee 100%);
+  background-attachment: fixed;
+}
+
+#app {
+  max-width: 610px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.logged {
+  align-content: flex-start !important;
+}
+
+.logo {
+  width: 100%;
+  max-height: 52px;
+  margin: 20px auto 25px;
+  display: block;
+}
+
+.login,
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+  border: none;
+}
+
+input {
+  margin-bottom: 14px;
+  background-color: #d2d2d2;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #d2d2d2 inset;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
+}
+button {
+  color: white;
+  background-color: #008429;
+}
+button:hover {
+  color: white;
+  background-color: #00a333;
+}
+button:disabled {
+  background-color: #d2d2d2;
+}
+
+.login {
+  background-color: white;
+  margin-top: 14px;
+  border-radius: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+li {
+  background-color: white;
+  height: 40px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  flex: 1;
+  margin: 5px;
+  cursor: pointer;
+}
+
+a {
+  padding: 10px;
+  padding-left: 45px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #888888;
+}
+
+li > img {
+  transition: all 0.07s ease;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  filter: grayscale(100%);
+  pointer-events: none;
+  background-color: #888888;
+}
+
+li:hover > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  filter: grayscale(0%);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
